@@ -1,0 +1,130 @@
+body {
+    background: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+/*********HEADER**************************************************/
+
+#headContainer {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+header {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#topBar {
+    height: 70px;
+    border-bottom: #000 solid 3px;
+    position: relative;
+}
+
+#LogoContainer {
+    height: 45px;
+    width: 260px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#Logo {
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+}
+
+
+#searchIcon {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: purple;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#navIcon {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: royalblue;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+    
+}
+
+/*********FOOTER**************************************************/
+
+#footerContainer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+}
+
+footer {
+    padding: 20px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#bottomBar {
+    border-top: #000 solid 3px;
+    position: relative;
+}
+
+#nameQuote {
+    min-width: 300px;
+    font-size: 16px;
+    width: 580px;
+    position: relative;
+}
+
+#fullname {
+    font-size: 25px;
+}
+
+#author {
+text-align: right;
+}
+
+@media only screen and (max-width: 710px) {
+    #nameQuote {
+    width: 70%;
+    }
+}
+
+#socialmedia {
+    position: absolute;
+    height: 25px;
+    width: 90px;
+    left: 100%;
+    top: 25px;
+    transform: translate(-100%, 0); 
+    display: flex;
+}
+
+#instagram, #facebook, #youtube {
+    height: 25px;
+    width: 25px;
+    background-color: darkmagenta;
+    margin-left: 5px;
+}
+
+/*********MAIN**************************************************/
+
+#main {
+    margin: 0 auto;
+    padding: 90px 20px 20px;
+}
