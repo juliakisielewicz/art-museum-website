@@ -39,6 +39,7 @@ header {
 
 #Logo {
     font-size: 40px;
+    font-weight: 500;
     text-decoration: none;
     color: #000;
 }
@@ -95,20 +96,18 @@ footer {
     font-size: 25px;
 }
 
-#author {
-text-align: right;
+#city {
+    font-weight: 500;
 }
 
-@media only screen and (max-width: 710px) {
-    #nameQuote {
-    width: 70%;
-    }
+#author {
+text-align: right;
 }
 
 #socialmedia {
     position: absolute;
     height: 25px;
-    width: 90px;
+    width:105px;
     left: 100%;
     top: 25px;
     transform: translate(-100%, 0); 
@@ -118,13 +117,36 @@ text-align: right;
 #instagram, #facebook, #youtube {
     height: 25px;
     width: 25px;
-    background-color: darkmagenta;
-    margin-left: 5px;
+    margin-left: 10px;
 }
+
 
 /*********MAIN**************************************************/
 
 #main {
     margin: 0 auto;
     padding: 90px 20px 20px;
+}
+
+/*********RESPONSIVE MODE**************************************************/
+
+@media only screen and (max-width: 800px) {
+
+    #topBar {
+        height: 50px;
+    }
+
+    #LogoContainer {
+        height: 30px;
+    }
+
+    #Logo {
+        font-size: 28px;
+    }
+
+    #nameQuote {
+        width: 70%;
+        }
+
+
 }
