@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="css/template.css">
-    <link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/about.css">
     <link rel="preconnect" href="css/https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet"> 
+    <script src="../js/template.js"></script> 
+
     <title>ART MUSEUM</title>
 	<meta charset="utf-8">
 </head>
@@ -16,13 +18,52 @@
         <header>
             <div id="topBar">
                 <div id="LogoContainer">
-                    <a id="Logo" href="/">ART MUSEUM</a>
+                    <a id="Logo" href="../index.html">ART MUSEUM</a>
                 </div>
                 <div id="searchIcon"></div>
-                <div id="navIcon"></div>
+                <div class="navIcon" onclick="handleMenuButton()">
+                    <div class="navElem" id="top"></div>
+                    <div class="navElem" id="middle"></div>
+                    <div class="navElem" id="bottom"></div>
+                </div>
             </div>
         </header>
         <!-- divs for menu & search-->
+
+        <div class="overlay" id="overlay">
+
+
+            <ul class="nav">
+                <li><a href="#">About museum</a> 
+                    <ul>
+                        <li><a href="#">Museum history</a></li>
+                        <li><a href="html/collection.html">Collection</a></li>
+                        <li><a href="#">Staff</a></li>
+                    </ul>            
+                </li>
+                <li><a href="#">Exhibitions</a> </li>
+                <li><a href="#">Visit</a> </li>
+                <li><a href="#">Learning and reserach</a>             
+                    <ul>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Learning groups</a></li>
+                    </ul>            
+                </li>
+                <li><a href="#">Support</a>            
+                    <ul>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Supporters and Partners</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a> </li>
+            </ul>
+
+
+
+        </div>
+
     </div>
     <div id="main">
         <div id="historyTitle"><span>Collection</span></div>
@@ -51,17 +92,17 @@
                 <div id="socialmedia">
                     <div>
                         <a href="https://www.instagram.com/" target="_blank">
-                            <img id="instagram" src="img/instagram.png" alt="Instagram logo"/>
+                            <img id="instagram" src="../img/instagram.png" alt="Instagram logo"/>
                         </a>
                     </div>
                     <div>
                         <a href="https://www.facebook.com/" target="_blank">
-                            <img id="facebook" src="img/facebook.png" alt="Facebook logo"/>
+                            <img id="facebook" src="../img/facebook.png" alt="Facebook logo"/>
                         </a>
                     </div>
                     <div>
                         <a href="https://www.youtube.com/" target="_blank">
-                            <img id="youtube" src="img/youtube.png" alt="Youtube logo"/>
+                            <img id="youtube" src="../img/youtube.png" alt="Youtube logo"/>
                         </a>
                     </div>
                 </div>
