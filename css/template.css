@@ -109,6 +109,26 @@ header {
 
 }
 
+.overlay_footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.overlay_footer footer{
+    background-color:#3D3939;
+    color: white;
+
+    position:fixed;
+    bottom:0;
+    width: 98%;
+
+}
+
+.overlay_footer #bottom_bar {
+    border-top: white solid 3px;
+
+}
+
 
 /*********MENU******/
 
