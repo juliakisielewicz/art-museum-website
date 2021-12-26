@@ -179,7 +179,7 @@ ul li:hover>ul {
     bottom: 0;
     width: 100%;
     color: #000;
-    position: fixed;
+    position: relative;
     background-color: white;
 }
 
