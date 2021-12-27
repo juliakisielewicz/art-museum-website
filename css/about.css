@@ -1,23 +1,8 @@
-#historyTitle {
-    height: 70px;
-    border-left: solid #000 3px;
-    padding-left: 20px;
-    margin: 30px 0;
-    position: relative;
-}
-
-#historyTitle > span {
-    position: absolute;
-    font-size: 45px;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-#historyPhoto {
+#pagePhoto {
     width: 100%;
 }
 
-#historyText {
+#pageText {
     margin-top: 30px;
     width: 750px;
     text-align: justify;
@@ -27,7 +12,7 @@
 
 @media only screen and (max-width: 800px) {
 
-    #historyText {
+    #pageText {
         width: 100%;
     }
 }
