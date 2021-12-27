@@ -1,0 +1,116 @@
+.tilesContainer {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 7vw;
+    justify-items: center;
+}
+
+.tile {
+    height: 26vw;
+    width: 26vw;
+    position: relative;
+}
+
+.tileDetailsBackground {
+    width: 90%;
+    background-color: white;
+    opacity: 0.5;
+    height: 40%;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    transition: all 0.5s;
+}
+
+.tile:hover .tileDetailsBackground {
+    height: 90%;
+}
+
+.tileDetails {
+    border-left: black solid 3px;
+    bottom: 0;
+    height: 30%;
+    margin: 10%;
+    position: absolute;
+    padding-left: 20px;
+    transition: all 0.5s;
+
+}
+
+.tile:hover .tileDetails {
+    height: 80%;
+}
+
+.tileDetails > div {
+    font-size: 1.2vw;
+    color: black;
+    transition: all 0.5s;
+}
+
+.tile:hover .tileDetails > div {
+    font-size: 1.5vw;
+}
+
+.tilePhoto {
+    width: 100%;
+}
+
+.tileTitle {
+    position: absolute;
+    top: 10%;
+    font-weight: 500;
+}
+
+.tileAuthor {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.tileTimeframe {
+    position: absolute;
+    bottom: 10%;
+}
+
+/*********RESPONSIVE MODE**************************************************/
+
+@media only screen and (max-width: 1100px) {
+
+    .tilesContainer {
+        grid-template-columns: auto auto;   
+    }
+
+    .tile {
+        height: 36vw;
+        width: 36vw;
+    }
+
+    .tileDetails > div {
+        font-size: 1.8vw;
+    }
+
+    .tile:hover .tileDetails > div {
+        font-size: 2.2vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .tilesContainer {
+        grid-template-columns: auto;
+    }
+
+    .tile {
+        height: 70vw;
+        width: 70vw;
+    }
+
+    .tileDetails > div {
+        font-size: 3.2vw;
+    }
+
+    .tile:hover .tileDetails > div {
+        font-size: 4vw;
+    }
+}

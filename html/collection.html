@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" href="../css/template.css">
     <link rel="stylesheet" href="../css/about.css">
-    <link rel="preconnect" href="css/https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../css/pageTitle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet"> 
@@ -30,18 +30,24 @@
         </header>
         <!-- divs for menu & search-->
 
-        <div class="overlay" id="overlay">
+        <div class="overlay" id="overlay" style="display: none;">
 
 
             <ul class="nav">
                 <li><a href="#">About museum</a> 
                     <ul>
-                        <li><a href="#">Museum history</a></li>
-                        <li><a href="html/collection.html">Collection</a></li>
+                        <li><a href="history.html">Museum history</a></li>
+                        <li><a href="collection.html">Collection</a></li>
                         <li><a href="#">Staff</a></li>
                     </ul>            
                 </li>
-                <li><a href="#">Exhibitions</a> </li>
+                <li><a href="#">Exhibitions</a> 
+                    <ul>
+                        <li><a href="current.html">Current</a></li>
+                        <li><a href="upcoming.html">Upcoming</a></li>
+                        <li><a href="past.html">Past</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Visit</a> </li>
                 <li><a href="#">Learning and reserach</a>             
                     <ul>
@@ -94,9 +100,9 @@
 
     </div>
     <div id="main">
-        <div id="historyTitle"><span>Collection</span></div>
-        <img id="historyPhoto"src="img/collection.jpg" alt="Museum interior with colorful paintings and installations">
-        <div id="historyText">
+        <div id="pageTitle"><span>Collection</span></div>
+        <img id="pagePhoto"src="../img/collection.jpg" alt="Museum interior with colorful paintings and installations">
+        <div id="pageText">
             <p>The museum holds the extensive collection, accumulated over the years by the founder Zera Knowles. 
                 The collection includes works by several internationally recognized artists such as Jean-Michel Basquiat, Liu Wei, 
                 Takashi Murakami, Sean Scully, Jeff Koons and Damien Hirst. </p>
