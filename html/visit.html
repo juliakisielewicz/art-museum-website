@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/visit.css">
+    <link rel="stylesheet" href="../css/pageTitle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet"> 
+    <script src="../js/template.js"></script> 
+
+    <title>ART MUSEUM</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+    <div id="headContainer">
+        <header>
+            <div id="topBar">
+                <div id="LogoContainer">
+                    <a id="Logo" href="../index.html">ART MUSEUM</a>
+                </div>
+                <div id="searchIcon"></div>
+                <div class="navIcon" onclick="handleMenuButton()">
+                    <div class="navElem" id="top"></div>
+                    <div class="navElem" id="middle"></div>
+                    <div class="navElem" id="bottom"></div>
+                </div>
+            </div>
+        </header>
+        <!-- divs for menu & search-->
+        <div class="overlay" id="overlay" style="display: none;">
+
+
+            <ul class="nav">
+                <li><a href="#">About museum</a> 
+                    <ul>
+                        <li><a href="history.html">Museum history</a></li>
+                        <li><a href="collection.html">Collection</a></li>
+                        <li><a href="#">Staff</a></li>
+                    </ul>            
+                </li>
+                <li><a href="#">Exhibitions</a> 
+                    <ul>
+                        <li><a href="current.html">Current</a></li>
+                        <li><a href="upcoming.html">Upcoming</a></li>
+                        <li><a href="past.html">Past</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Visit</a> </li>
+                <li><a href="#">Learning and reserach</a>             
+                    <ul>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Learning groups</a></li>
+                    </ul>            
+                </li>
+                <li><a href="#">Support</a>            
+                    <ul>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Supporters and Partners</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a> </li>
+            </ul>
+
+
+            <div class="overlay_footer" id="footerContainer">
+                <footer>
+                    <div id="bottomBar">
+                        <div id="nameQuote">
+                            <p id="fullname">The <span id="city">Hertford</span> Art Museum</p>
+                            <p id="quote">Gascoyne Way, Hertford SG14 1LH, United Kingdom</p>
+                        </div>
+                        <div id="socialmedia">
+                            <div>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img id="instagram" src="../img/instagram.png" alt="Instagram logo"/>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img id="facebook" src="../img/facebook.png" alt="Facebook logo"/>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <img id="youtube" src="../img/youtube.png" alt="Youtube logo"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div id="main">
+
+
+        <div class="flexbox">
+            <div class="flexelement">
+                <h2>Opening hours</h2>
+
+                <ul>
+                    <li>Tuesday - Sunday: <span id="bold"><br>10:00 - 20:00</span></li>
+                    <li>Monday: <span id="bold"><br>Closed</span></li>
+                </ul>
+            
+            </div>
+
+            <div class="flexelement">
+                <h2>Tickets</h2>
+                
+                <ul>
+                    <li>Regular ticket: <span id="bold">10£</span></li>
+                    <li>Reduced ticket: <span id="bold">6£</span></li>
+                    <li>Hertford City Card: <span id="bold">8£</span></li>
+                
+                    <li>Group of 8 and more people: <span id="bold">6£/person</span> </li>
+                    <li>
+
+                        <span id="reduced_tickets">Reduced tickets only for: </span>
+                        <ul id="nested_list">
+                                
+                            <li>School children (below age 19) </li>
+                            <li>Students (below age 28) </li>
+                            <li>Senior citizens (age 65 and above) </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flexelement">
+                <h2>Getting Here</h2>
+
+                <div class="getting_here">
+                    <h3>Address</h3>
+                    <p>Gascoyne Way, Hertford SG14 1LH</p>
+                    <h3>Parking</h3>
+                    <p>Nearest car parks are Gascoyne Way or Hartham Common (3-5 minutes walk).</p>
+                    <h3>Public Transportation</h3>
+                    <h3>Train</h3>
+                    <p>5 minutes walk from Hertford East and 15 minutes from Hertford North station.</p>
+                    <h3>Bus</h3>
+                    <p>3 minutes walk from Hertford Bus station</p>
+                    <h3>Bicycle</h3>
+                    <p>Hertford Museum is very close to cycle paths</p>
+
+
+                </div>
+            
+            
+            </div>
+        </div>
+
+        <h2 id="more_info">
+            <a href="https://www.google.com/maps/place/Gascoyne+Way,+Hertford+SG14,+UK/data=!4m2!3m1!1s0x487626913efe0c57:0x2ef04bd53514a0b2">Find us on the map!</a><br>
+            <a href="#" >Still need more info?</a>
+        </h2>
+
+
+    </div>
+    <div id="footerContainer">
+        <footer>
+            <div id="bottomBar">
+                <div id="nameQuote">
+                    <p id="fullname">The <span id="city">Hertford</span> Art Museum</p>
+                    <p id="quote">"Whatever else art is good for, its chief effectiveness lies in propagating more art."</p>
+                    <p id="author">- Leo Steinberg</p>
+                </div>
+                <div id="socialmedia">
+                    <div>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img id="instagram" src="../img/instagram.png" alt="Instagram logo"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img id="facebook" src="../img/facebook.png" alt="Facebook logo"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img id="youtube" src="../img/youtube.png" alt="Youtube logo"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
