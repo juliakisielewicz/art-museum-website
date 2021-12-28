@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+  }
+
+
+h2 {
+    text-align: left;
+    border-left: black 3px solid;
+    color: black;
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+.flexbox {
+    display: flex;
+}
+
+.flexelement {
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    flex: 1 1 0px
+}
+
+.flexbox ul {
+    list-style: none;
+    padding: 0;
+
+    font-size: 3vh;
+}
+
+.flexbox ul li {
+    padding: 5px 5px 5px 0px;
+}
+
+.flexbox #nested_list li {
+    font-size: smaller;
+    margin-left: 0px;
+}
+
+.flexbox li:nth-child(4) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#reduced_tickets{
+    padding-top: 200px;
+}
+
+.getting_here {
+    font-size: 2vh;
+}
+
+#more_info {
+    border-left: none;
+}
+#more_info a{
+    text-decoration: none;
+    color: black;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+.text {
+    font-size: smaller;
+    margin-left: 10px;
+}
+
+
+
+/************RESPONSIVE MODE****************/
+
+@media screen and (max-width: 800px) {
+    .flexbox {
+      flex-direction: column;
+    }
+  }
+
+  
