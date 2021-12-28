@@ -55,9 +55,15 @@ h2 {
 #more_info {
     border-left: none;
 }
+
 #more_info a{
     text-decoration: none;
     color: black;
+    font-weight:500;
+}
+
+#more_info a:hover{
+    text-decoration: underline;
 }
 
 #bold {
@@ -67,6 +73,17 @@ h2 {
 .text {
     font-size: smaller;
     margin-left: 10px;
+}
+
+.getting_here a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+.getting_here a:hover {
+    text-decoration: underline;
 }
 
 
