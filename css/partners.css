@@ -1,0 +1,17 @@
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexelement {
+    padding: 20px;
+    margin: 20px;
+    background: rgb(255, 255, 255);
+    flex: 1 1 0px;
+    width: 500px;
+}
+
+.img {
+    display: block;
+    margin: auto;
+}
