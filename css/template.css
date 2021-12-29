@@ -104,7 +104,6 @@ header {
     left: 0;
     right: 0;
     background-color:#3D3939;
-
     cursor: pointer;
 
 }
@@ -134,7 +133,7 @@ header {
 
 .nav{
     margin-top: 50px;
-
+    line-height: 50px;
     list-style: none;
 
 
