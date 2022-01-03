@@ -8,8 +8,14 @@
 
 }
 
-#press_contact {
+.contact {
     text-align: center;
+}
+
+#contact2{
+    border-top: black 2px solid;
+    margin-top: 50px;
+    padding-top: 50px;
 }
 
 #bold {
