@@ -1,0 +1,14 @@
+#main a {
+    text-decoration: none;
+    color: rgb(98, 91, 91);
+    
+}
+
+#main a:hover {
+    text-decoration: underline;
+    color: rgb(59, 59, 59);
+}
+
+#pricing li{
+    padding: 10px;
+}

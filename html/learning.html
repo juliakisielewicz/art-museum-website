@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/pageTitle.css">
+    <link rel="stylesheet" href="../css/learning.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet"> 
+    <script src="../js/template.js"></script> 
+
+    <title>ART MUSEUM</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+    <div id="headContainer">
+        <header>
+            <div id="topBar">
+                <div id="LogoContainer">
+                    <a id="Logo" href="../index.html">ART MUSEUM</a>
+                </div>
+                <div id="searchIcon"></div>
+                <div class="navIcon" onclick="handleMenuButton()">
+                    <div class="navElem" id="top"></div>
+                    <div class="navElem" id="middle"></div>
+                    <div class="navElem" id="bottom"></div>
+                </div>
+            </div>
+        </header>
+        <!-- divs for menu & search-->
+        <div class="overlay" id="overlay" style="display: none;">
+
+
+            <ul class="nav">
+                <li><a href="#">About museum</a> 
+                    <ul>
+                        <li><a href="history.html">Museum history</a></li>
+                        <li><a href="collection.html">Collection</a></li>
+                        <li><a href="#">Staff</a></li>
+                    </ul>            
+                </li>
+                <li><a href="#">Exhibitions</a> 
+                    <ul>
+                        <li><a href="current.html">Current</a></li>
+                        <li><a href="upcoming.html">Upcoming</a></li>
+                        <li><a href="past.html">Past</a></li>
+                    </ul>
+                </li>
+                <li><a href="visit.html">Visit</a> </li>
+                <li><a href="#">Learning and reserach</a>             
+                    <ul>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="learning.html">Learning groups</a></li>
+                    </ul>            
+                </li>
+                <li><a href="#">Support</a>            
+                    <ul>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="partners.html">Supporters and Partners</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a> </li>
+            </ul>
+
+
+            <div class="overlay_footer" id="footerContainer">
+                <footer>
+                    <div id="bottomBar">
+                        <div id="nameQuote">
+                            <p id="fullname">The <span id="city">Hertford</span> Art Museum</p>
+                            <p id="quote">Gascoyne Way, Hertford SG14 1LH, United Kingdom</p>
+                        </div>
+                        <div id="socialmedia">
+                            <div>
+                                <a href="https://www.instagram.com/" target=”_blank”>
+                                    <img id="instagram" src="../img/instagram.png" alt="Instagram logo"/>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.facebook.com/" target=”_blank”>
+                                    <img id="facebook" src="../img/facebook.png" alt="Facebook logo"/>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.youtube.com/" target=”_blank”>
+                                    <img id="youtube" src="../img/youtube.png" alt="Youtube logo"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div id="main">
+        <div id="pageTitle"><span>Visit for learning groups</span></div>
+        <img id="pagePhoto"src="../img/daniel-tong-PIH3kx8hhx0-unsplash.jpg" alt="Museum interior with colorful paintings on the white walls">
+        <div id="pageText">
+            <p>The Hertford Art Museum is open for schools, universities, families and friends groups for guided visits of the <a href="current.html">current exhibitions</a>.</p>
+
+            <p>Guided tours for learning groups must be reserved at least two weeks prior to your visit date. 
+                Any cancelation must be announced one week before. For any booking/cancelation matters contact <a href="contact.html">booking office</a>.</p>
+
+            <p style="font-weight: bold;">Pricing</p>
+
+            <p>
+                Guided tours to the exhibitions cost:
+                <ul id="pricing">
+                    <li>
+                        £8 reduced ticket - only for groups listed <a href="visit.html">here</a>.
+                    </li>
+
+                    <li>
+                        £12 - regual ticket (Hertford City Card does not applay for guided tours)
+                    </li>
+                </ul>
+
+                Teachers and tutors are free with ratio 1 tutor per 10 members of group.
+
+            </p>
+        </div>
+    </div>
+    <div id="footerContainer">
+        <footer>
+            <div id="bottomBar">
+                <div id="nameQuote">
+                    <p id="fullname">The <span id="city">Hertford</span> Art Museum</p>
+                    <p id="quote">"Whatever else art is good for, its chief effectiveness lies in propagating more art."</p>
+                    <p id="author">- Leo Steinberg</p>
+                </div>
+                <div id="socialmedia">
+                    <div>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img id="instagram" src="../img/instagram.png" alt="Instagram logo"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img id="facebook" src="../img/facebook.png" alt="Facebook logo"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img id="youtube" src="../img/youtube.png" alt="Youtube logo"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
