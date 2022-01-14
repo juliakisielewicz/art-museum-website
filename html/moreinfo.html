@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/pageTitle.css">
+    <link rel="stylesheet" href="../css/moreinfo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet"> 
+    <script src="../js/template.js"></script> 
+    <script src="../js/moreinfo.js"></script> 
+
+    <title>ART MUSEUM</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+    <div id="headContainer">
+        <header>
+            <div id="topBar">
+                <div id="LogoContainer">
+                    <a id="Logo" href="../index.html">ART MUSEUM</a>
+                </div>
+                <div id="searchIcon"></div>
+                <div class="navIcon" onclick="handleMenuButton()">
+                    <div class="navElem" id="top"></div>
+                    <div class="navElem" id="middle"></div>
+                    <div class="navElem" id="bottom"></div>
+                </div>
+            </div>
+        </header>
+        <!-- divs for menu & search-->
+
+        <div class="overlay" id="overlay" style="display: none;">
+
+
+            <ul class="nav">
+                <li><a href="#">About museum</a> 
+                    <ul>
+                        <li><a href="history.html">Museum history</a></li>
+                        <li><a href="collection.html">Collection</a></li>
+                        <li><a href="staff.html">Staff</a></li>
+                    </ul>            
+                </li>
+                <li><a href="#">Exhibitions</a> 
+                    <ul>
+                        <li><a href="current.html">Current</a></li>
+                        <li><a href="upcoming.html">Upcoming</a></li>
+                        <li><a href="past.html">Past</a></li>
+                    </ul>
+                </li>
+                <li><a href="visit.html">Visit</a> </li>
+                <li><a href="#">Learning and reserach</a>             
+                    <ul>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="learning.html">Learning groups</a></li>
+                    </ul>            
+                </li>
+                <li><a href="#">Support</a>            
+                    <ul>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="partners.html">Supporters and Partners</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a> </li>
+            </ul>
+
+            <div class="overlay_footer" id="footerContainer">
+                <footer>
+                    <div id="bottomBar">
+                        <div id="nameQuote">
+                            <p id="fullname">The <span id="city">Hertford</span> Art Museum</p>
+                            <p id="quote">Gascoyne Way, Hertford SG14 1LH, United Kingdom</p>
+                        </div>
+                        <div id="socialmedia">
+                            <div>
+                                <a href="https://www.instagram.com/" target=”_blank”>
+                                    <img id="instagram" src="../img/instagram.png" alt="Instagram logo"/>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.facebook.com/" target=”_blank”>
+                                    <img id="facebook" src="../img/facebook.png" alt="Facebook logo"/>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.youtube.com/" target=”_blank”>
+                                    <img id="youtube" src="../img/youtube.png" alt="Youtube logo"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div id="main">
+        <div id="pageTitle"><span>More Info</span></div>
+        
+        <div class="infoContainer"> 
+            <div class=infoBlock>
+                <div class="infoTitle" >
+                    <a href='javascript:void();' onClick='showMore("cloakroom")'><span>Cloakroom</span></a>
+                </div>
+                <div class="moreInfo" id="cloakroom" style="max-height:0px">
+                    <span>A free cloakroom is available to all visitors as well as the possibility of using a locker.
+                    </span>
+                    <br /><br />
+                </div>
+            </div>
+            <div class=infoBlock>
+                <div class="infoTitle" >
+                    <a href='javascript:void();' onClick='showMore("accessibility")'><span>Accessibility</span></a>
+                </div>
+                <div class="moreInfo" id="accessibility" style="max-height:0px">
+                    <span>For visitors with restricted mobility and visitors with baby carriages, the Hertford Art Museum can be accessed via the elevator, 
+                            located at the entrance.
+                    </span>
+                    <br /><br />
+                </div>
+            </div>
+            <div class=infoBlock>
+                <div class="infoTitle" >
+                    <a href='javascript:void();' onClick='showMore("audioguide")'><span>Audioguide</span></a>
+                </div>
+                <div class="moreInfo" id="audioguide" style="max-height:0px">
+                    <span>The Leopold Museum offers audio guides about the collection in German, English, Italian, French, and Spanish.
+                    </span>
+                    <br /><br />
+                </div>
+            </div>
+            <div class=infoBlock>
+                <div class="infoTitle" >
+                    <a href='javascript:void();' onClick='showMore("cafe")'><span>Café</span></a>
+                </div>
+                <div class="moreInfo" id="cafe" style="max-height:0px">
+                    <span>Museum Café is located on level 2 and can be easily reached via elevator or stairs. 
+                        It is also accessible from the outside and can be visited without a ticket.
+                    </span>
+                    <br /><br />
+                </div>
+            </div>
+            <div class=infoBlock>
+                <div class="infoTitle" >
+                    <a href='javascript:void();' onClick='showMore("duration")'><span>Duration of your visit</span></a>
+                </div>
+                <div class="moreInfo" id="duration" style="max-height:0px">
+                    <span>You can spend about 2-3 hours in the museum. In addition to the permanent collection, there are changing special exhibitions. 
+                        <br><br>A floor plan is available in the entrance area for free.
+                    </span>
+                    <br /><br />
+                </div>
+            </div>
+            <div class=infoBlock>
+                <div class="infoTitle" >
+                    <a href='javascript:void();' onClick='showMore("pets")'><span>Pets</span></a>
+                </div>
+                <div class="moreInfo" id="pets" style="max-height:0px">
+                    <span>Taking animals into the Hertford Art Museum is prohibited for safety reasons.
+                    </span>
+                    <br /><br />
+                </div>
+            </div>
+            <div class=infoBlock>
+                <div class="infoTitle" >
+                    <a href='javascript:void();' onClick='showMore("photography")'><span>Photography</span></a>
+                </div>
+                <div class="moreInfo" id="photography" style="max-height:0px">
+                    <span> Taking pictures without flash in the Hertford Art Collection is permitted, if for private purposes. 
+                        In all special exhibitions, you will find information on photo permissions directly in the exhibition itself. 
+                        <br>Flashes, additional light, tripods, selfie sticks, and other superstructures may not be used.
+                        <br><br>Written permission is required for editorial photo and film recordings. 
+                        Please <a href="contact.html" style="color: black;">contact</a> us for images of artwork and reproduction rights.
+                    </span>
+                    <br /><br />
+                </div>
+            </div>
+            <div class=infoBlock>
+                <div class="infoTitle" >
+                    <a href='javascript:void();' onClick='showMore("shop")'><span>Shop</span></a>
+                </div>
+                <div class="moreInfo" id="shop" style="max-height:0px">
+                    <span>The shop is on level 1 and can be reached via the stairs or elevator. It closes half an hour before the museum closes.
+                        <br><br>If you only want to visit the shop and not the museum, please inform yourself about the possibilities at the cash desk.
+                    </span>
+                    <br /><br />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footerContainer">
+        <footer>
+            <div id="bottomBar">
+                <div id="nameQuote">
+                    <p id="fullname">The <span id="city">Hertford</span> Art Museum</p>
+                    <p id="quote">"Whatever else art is good for, its chief effectiveness lies in propagating more art."</p>
+                    <p id="author">- Leo Steinberg</p>
+                </div>
+                <div id="socialmedia">
+                    <div>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img id="instagram" src="../img/instagram.png" alt="Instagram logo"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img id="facebook" src="../img/facebook.png" alt="Facebook logo"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img id="youtube" src="../img/youtube.png" alt="Youtube logo"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
