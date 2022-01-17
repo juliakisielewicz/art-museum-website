@@ -1,0 +1,64 @@
+#text {
+    font-size: 22px;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 850px;
+    text-align: center;
+}
+
+.form {
+    font-size: 22px;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 700px;
+}
+
+#otherContainer {
+    height: 0px;
+}
+#enterAmount {
+    display: none;
+}
+
+.one {
+    width: 100%;
+    height: 25px;
+}
+
+.two {
+    display: flex;
+}
+
+.two > label, .two > input {
+    flex: 50%;
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+#total {
+    color:green;
+}
+
+.button {
+    border: none;
+    padding: 20px 37px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+
+/*********RESPONSIVE MODE**************************************************/
+
+@media only screen and (max-width: 900px) {
+
+    .form {
+        width: 100%;
+    }
+    #text {
+        font-size: 16px;
+        width: 100%;
+    }
+}

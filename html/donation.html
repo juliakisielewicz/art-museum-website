@@ -2,13 +2,15 @@
 <html>
 <head>
 	<link rel="stylesheet" href="../css/template.css">
-    <link rel="stylesheet" href="../css/tiles.css">
     <link rel="stylesheet" href="../css/pageTitle.css">
-    <link rel="stylesheet" href="../css/events.css">
+    <link rel="stylesheet" href="../css/donation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet"> 
     <script src="../js/template.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="../js/donation.js"></script>
+    
 
     <title>ART MUSEUM</title>
 	<meta charset="utf-8">
@@ -21,7 +23,6 @@
                 <div id="LogoContainer">
                     <a id="Logo" href="../index.html">ART MUSEUM</a>
                 </div>
-                
                 <div class="navIcon" onclick="handleMenuButton()">
                     <div class="navElem" id="top"></div>
                     <div class="navElem" id="middle"></div>
@@ -100,42 +101,70 @@
         </div>
     </div>
     <div id="main">
-        <div id="pageTitle"><span>Events</span></div>
-        <div class="tilesContainer">
-            <div class="tile">
-                <a href='javascript:void();'> 
-                    <img class="tilePhoto" src="../img/events1.jpg" alt="The Spider - one of the Nazca Lines in Peru"/>
-                    <div class="tileDetailsBackground"></div>
-                    <div class=tileDetails>
-                        <div class="tileTitle"><nobr>Ancient Peruvian cultures <br>and their living landscapes </nobr></div>
-                        <div class="tileAuthor"><nobr>Lecture</nobr></div>
-                        <div class="tileTimeframe"><nobr>23.01.2022, 6:00 PM</nobr></div>
-                    </div>
-                </a>
-            </div>
-            <div class="tile">
-                <a href='javascript:void();'> 
-                    <img class="tilePhoto" src="../img/events2.jpg" alt="Mended red jumper"/>
-                    <div class="tileDetailsBackground"></div>
-                    <div class=tileDetails>
-                        <div class="tileTitle"><nobr>Textile mending</nobr></div>
-                        <div class="tileAuthor"><nobr>Workshop</nobr></div>
-                        <div class="tileTimeframe"><nobr>01.02.2022, 2:00 PM</nobr></div>
-                    </div>
-                </a>
-            </div>
-            <div class="tile">
-                <a href='javascript:void();'> 
-                    <img class="tilePhoto" src="../img/events4.jpg" alt="Hertford Castle"/>
-                    <div class="tileDetailsBackground"></div>
-                    <div class=tileDetails>
-                        <div class="tileTitle"><nobr>Art Escapes</nobr></div>
-                        <div class="tileAuthor"><nobr>Walk</nobr></div>
-                        <div class="tileTimeframe"><nobr>10.02.2022, 10:00 AM</nobr></div>
-                    </div>
-                </a>
-            </div>
+        <div id="pageTitle"><span>Make a gift</span></div>
+        <div id="text">
+            <p>By making a donation to the Hertford Art Museum, you become an active member of the museum community and help us create new experiences.</p>
+            <p>You can decide for yourself whether your donation will go to the general activities of the museum, or to the creation of new temporary exhibitions, 
+            conservation of the collection or educational projects.</p>
+            <p>The Herford Art Museum is grateful for, and delighted with, every donation!</p>
+            <p>We find your support particularly useful for acquisitions, restorations, research, exhibitions and educational programmes. </p>
         </div>
+        <form class="form" id="formAmount">
+            <p><br><br>Amount to donate:</p>
+            <input type="radio" name="amount" class="hideOther" value="5">£5<br><br>
+            <input type="radio" name="amount" class="hideOther" value="20">£20<br><br>
+            <input type="radio" name="amount" class="hideOther" value="50">£50<br><br>
+            <input type="radio" name="amount" class="hideOther" value="100">£100<br><br>
+            <input type="radio" name="amount" id="other" value="0">Other amount:<br><br>
+            <div id=otherContainer>
+                <label for="enterAmount" id="otherLabel" style="display: none;">Enter amount: </label><br>
+                <input type="number" name="amount" id="enterAmount"">
+            </div>
+            <br>
+            <div id="selectContainer">
+                <label class="form" for="goal">Please direct my donation towards:</label>
+                <select class="form" id="goal">
+                    <option value="Where it is more needed">Where it is more needed</option>
+                    <option value="Exhibitions">Exhibitions</option>
+                    <option value="Collection">Collection</option>
+                    <option value="Conservation">Conservation</option>
+                    <option value="Educational Projects">Educational Projects</option>
+                </select>
+            </div>
+            <br><br>
+            <label class="one" for="email">Email: </label><br><br>
+            <input type="text" class="one" id="email""><br><br>
+            <div class="two">
+                <label for="firstName">First name: <br><br></label>
+                <label for="lastName">Last name: <br><br></label>
+            </div>
+            <div class="two">
+                <input type="text" id="firstName""><br><br>
+                <input type="text" id="lastName""><br><br>
+            </div>
+            <br><br>
+            <label class="one" for="address">Address: </label><br><br>
+            <input type="text" class="one" id="address""><br><br>
+            <div class="two">
+                <label for="zip">ZIP / Postal Code: <br><br></label>
+                <label for="city">City: <br><br></label>
+            </div>
+            <div class="two">
+                <input type="text" id="zip""><br><br>
+                <input type="text" id="city""><br><br>
+            </div>
+            <br>
+            <p>Total: </p>
+            <p id="total">£0.00</p>
+            <button type='button' class="button">Submit</button>
+            <p id="done"></p>
+        </form>
+
+            
+
+
+
+        
     </div>
     <div id="footerContainer">
         <footer>
