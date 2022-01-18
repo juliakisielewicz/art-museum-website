@@ -260,11 +260,12 @@ text-align: right;
 
 @media only screen and (max-width: 800px) {
 
-    #topBar {
-        /*bo się menu psuło przy zmniejszaniu okna*/
-        /* height: 50px; */
-    }
+    /*bo się menu psuło przy zmniejszaniu okna*/
+/*     #topBar {
 
+        height: 50px;
+    }
+ */
     #LogoContainer {
         height: 30px;
     }
